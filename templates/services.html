@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+
+
+{% block content %}
+
+<div class="container text-center rounded-3 " >
+  <div class="row py-3 " ><h2 class="m-0 p-0">Available Services</h2></div>
+  <div class="row rounded-3  c_white" >
+    <div class="col-md  p-3 m-2 service_btn card">
+      <img src="{% static 'image/PLUMBER (2).jpg' %}" class='service_img ' alt="Retesh Kumar Sharma">
+      <p class="h3 pt-3"><strong>PLUMBING</strong></p>
+      <p class="pb-3">Find experts in HTML, CSS, JavaScript, PHP, and more.</p>
+      <a href="{% url 'plumbing' %}">Explore</a>
+    </div>
+    <div class="col-md p-3 m-2 service_btn card">
+      <img src="{% static 'image/homecare_img.jpg' %}" class='service_img' alt="Akash Rajpoot">
+      <p class="h3 pt-3"><strong>CRAFTING</strong></p>
+      <p class="pb-3">Hire designers for logos, banners, illustrations, and more.</p>
+      <a href="#">Explore</a>
+    </div>
+    <div class="col-md p-3 m-2 service_btn card">
+      <img src="{% static 'image/Electricity.jpg' %}" class='service_img' alt="Himanshu Singh">
+      <p class="h3 pt-3"><strong>ELECTICAL</strong></p>
+      <p class="pb-3">Grow your business with SEO, social media, and PPC experts.</p>
+      <a href="#">Explore</a>
+    </div>
+    <div class="col-md p-3 m-2 service_btn card">
+        <img src="{% static 'image/painter.jpg' %}" class='service_img' alt="Jitendre Singh">
+        <p class="h3 pt-3"><strong>Painting</strong></p>
+        <p class="pb-3">Get content writing, translation, editing, and proofreading services.</p>
+        <a href="#">Explore</a>
+    </div>
+  </div>
+  <div class="row rounded-3  c_white" >
+    <div class="col-md p-3 m-2 service_btn card">
+      <img src="{% static 'image/Interior Design.jpg' %}" class='service_img' alt="Himanshu Singh">
+      <p class="h3 pt-3"><strong>Aging in Place</strong></p>
+      <p class="pb-3">Grow your business with SEO, social media, and PPC experts.</p>
+      <a href="#">Explore</a>
+    </div>
+    <div class="col-md p-3 m-2 service_btn card">
+        <img src="{% static 'image/Repairs and Architecture.jpg' %}" class='service_img' alt="Jitendre Singh">
+        <p class="h3 pt-3"><strong>REMODLING</strong></p>
+        <p class="pb-3">Get content writing, translation, editing, and proofreading services.</p>
+        <a href="#">Explore</a>
+    </div>
+    <div class="col-md p-3 m-2 service_btn card">
+        <img src="{% static 'image/Repairman.jpg' %}" class='service_img' alt="Jitendre Singh">
+        <p class="h3 pt-3"><strong>REPAIR</strong></p>
+        <p class="pb-3">Create explainer videos, animations, and motion graphics.</p>
+        <a href="#">Explore</a>
+    </div>
+    <div class="col-md p-3 m-2 service_btn card">
+        <img src="{% static 'image/Carpentary.jpg' %}" class='service_img' alt="Jitendre Singh">
+        <p class="h3 pt-3"><strong>CARPENTRY</strong></p>
+        <p class="pb-3">Produce music, sound effects, and voiceovers for your projects.</p>
+        <a href="#">Explore</a>
+    </div>
+    
+  </div>
+</div>
+
+<div class="container">
+  <div class="container">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+          <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+          </a>
+          <span class="mb-3 mb-md-0 text-body-secondary">© 2023 Company, Inc</span>
+        </div>
+    
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3"><a  href="#"> <i class="fa-brands fa-twitter fa-2xl"></i></a></li>
+          <li class="ms-3"><a  href="#"><i class="fa-brands fa-instagram fa-2xl"></i></a></li>
+          <li class="ms-3"><a  href="https://www.facebook.com/"><i class="fa-brands fa-facebook fa-2xl"></i></a></li>
+        </ul>
+       
+        
+        
+      </footer>
+    </div>
+{% endblock content %}
